@@ -10,6 +10,26 @@
 const prompt = require("prompt-sync")();
 
 
+const ROWS = 3;
+const COLS = 3;
+
+const SYMBOLSCOUNT = {
+    "A": 2,
+    "B": 4,
+    "C": 6,
+    "D": 8
+}
+
+
+const SYMBOLVALUES = {
+    "A": 5,
+    "B": 4,
+    "C": 3,
+    "D": 2
+}
+
+
+
 const deposit = () => {
     while(Ture){
         const depositAmount = prompt("Enter a deposit amount: ");
@@ -57,6 +77,11 @@ const getBet = (balance, lines) => {
     }
 
 };
+
+
+const spin = () => {
+    const symbols = [];
+}
 
 
 let balance = deposit();
